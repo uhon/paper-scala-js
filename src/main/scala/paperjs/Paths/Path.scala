@@ -2,7 +2,7 @@ package paperjs
 package Paths
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 import Basic._,Items._
 
@@ -11,7 +11,7 @@ import Basic._,Items._
  */
 
 @js.native
-@JSName("paper.Path")
+@JSGlobal("paper.Path")
 class Path(var segments: js.Array[Segment] = js.Array[Segment]()) extends Item with PathItem {
   def this(obj: js.Dynamic) = this()
   def this(pathData: String) = this()
@@ -61,7 +61,7 @@ class Path(var segments: js.Array[Segment] = js.Array[Segment]()) extends Item w
 }
 
 @js.native
-@JSName("paper.Path")
+@JSGlobal("paper.Path")
 object Path extends js.Object {
   def Line(from: Point, to: Point): Path = js.native
   def Line(obj: js.Dynamic): Path = js.native

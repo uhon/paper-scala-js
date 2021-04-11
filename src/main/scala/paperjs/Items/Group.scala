@@ -2,7 +2,7 @@ package paperjs
 package Items
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 26/04/15.
@@ -14,7 +14,7 @@ trait GroupNative extends Item {
 }
 
 @js.native
-@JSName("paper.Group")
+@JSGlobal("paper.Group")
 class Group(children: js.Array[Item]) extends GroupNative {
   def this(obj: js.Dynamic) = this(js.Array[Item]())
 }

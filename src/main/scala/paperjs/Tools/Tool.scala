@@ -2,14 +2,14 @@ package paperjs
 package Tools
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 27/04/15.
  */
 
 @js.native
-@JSName("paper.Tool")
+@JSGlobal("paper.Tool")
 class Tool extends EventHandling[Tool] {
   var minDistance: Double = js.native
   var maxDistance: Double = js.native

@@ -5,7 +5,7 @@ import Basic._
 import org.scalajs.dom
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 import org.scalajs.dom._
 
 /**
@@ -13,7 +13,6 @@ import org.scalajs.dom._
  */
 
 @js.native
-@JSName("paper.View")
 trait View extends EventHandling[View] {
   val element: raw.HTMLCanvasElement = js.native
   val pixelRatio: Double = js.native

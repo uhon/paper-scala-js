@@ -2,7 +2,7 @@ package paperjs
 package Basic
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 24/04/15.
@@ -15,7 +15,7 @@ trait SizeProps extends js.Object {
 }
 
 @js.native
-@JSName("paper.Size")
+@JSGlobal("paper.Size")
 class Size(width: Double, height: Double) extends SizeProps {
   def this(width: Double) = this(0,0)
   def this(point: Point) = this(0,0)
@@ -43,7 +43,7 @@ class Size(width: Double, height: Double) extends SizeProps {
 }
 
 @js.native
-@JSName("paper.Point")
+@JSGlobal("paper.Point")
 object Size extends js.Object {
   def min(size1: Size, size2: Size): Size = js.native
   def max(size1: Size, size2: Size): Size = js.native

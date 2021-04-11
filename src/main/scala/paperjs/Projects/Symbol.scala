@@ -4,14 +4,14 @@ package Projects
 import scala.scalajs.js
 import Items._,Basic._
 
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 25/04/15.
  */
 
 @js.native
-@JSName("paper.Symbol")
+@JSGlobal("paper.Symbol")
 class Symbol(item: Item, dontCenter: Boolean = false) extends js.Object {
   val project: Project = js.native
   var definition: Item = js.native

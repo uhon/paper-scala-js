@@ -7,7 +7,7 @@ import org.scalajs.dom.raw.SVGElement
 import scala.scalajs.js
 import Basic._, Styling._,Projects._,Tools.ToolEvent
 
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 25/04/15.

@@ -4,7 +4,7 @@ package Projects
 import org.scalajs.dom.raw.HTMLCanvasElement
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 import Styling._,Items._,Basic._
 
 /**
@@ -12,7 +12,7 @@ import Styling._,Items._,Basic._
  */
 
 @js.native
-@JSName("paper.Project")
+@JSGlobal("paper.Project")
 class Project(element: String) extends js.Object {
   def this(elem: HTMLCanvasElement) = this("")
   def view: View = js.native

@@ -4,7 +4,7 @@ package Styling
 import scala.scalajs.js
 import Projects._
 
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 25/04/15.

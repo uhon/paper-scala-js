@@ -2,7 +2,7 @@ package paperjs
 package Basic
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSGlobal, JSName}
 
 /**
  * Created by yoelusa on 25/04/15.
@@ -23,7 +23,7 @@ trait MatrixProps extends js.Object {
 }
 
 @js.native
-@JSName("paper.Matrix")
+@JSGlobal("paper.Matrix")
 class Matrix(a: Double, b: Double, c: Double, d: Double,
              tx: Double, ty: Double) extends MatrixProps {
   def set(a1: Double, b1: Double, c1: Double, d1: Double,

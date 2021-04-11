@@ -4,12 +4,14 @@ package Paths
 import Items._
 
 import scala.scalajs.js
+import scala.scalajs.js.annotation.JSGlobal
 
 /**
  * Created by yoelusa on 27/04/15.
  */
 
 @js.native
+@JSGlobal
 class CompoundPath(pathData: String) extends Item with PathItem{
   def this(obj: js.Dynamic) = this("")
 

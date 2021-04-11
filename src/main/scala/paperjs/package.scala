@@ -2,7 +2,7 @@ import org.scalajs.dom
 import org.scalajs.dom.html
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 27/04/15.
@@ -22,7 +22,7 @@ package object paperjs {
     val point: Point = js.native
   }
   @js.native
-  @JSName("paper.CurveLocation")
+  @JSGlobal("paper.CurveLocation")
   class CurveLocation(curve: Curve, parameter: Double, point: Point)
     extends js.Object {
     val segment: Segment = js.native
@@ -74,7 +74,7 @@ package object paperjs {
     def apply(): PaperScope = new PaperScope()
   }
   @js.native
-  @JSName("PaperScope")
+  @JSGlobal("PaperScope")
   class PaperScope extends js.Object {
     def setup(canvas: html.Canvas): Unit = js.native
     def activate(): Unit = js.native
@@ -87,11 +87,11 @@ package object paperjs {
     def tools: js.Array[Tool] = js.native
   }
   @js.native
-  @JSName("PaperScope")
+  @JSGlobal("PaperScope")
   object PaperScope extends js.Object {
     def get(id: Int): PaperScope = js.native
   }
   @js.native
-  @JSName("paper")
+  @JSGlobal("paper")
   object Paper extends PaperScope
 }

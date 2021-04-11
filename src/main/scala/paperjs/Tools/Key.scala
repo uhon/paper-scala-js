@@ -1,6 +1,7 @@
 package paperjs.Tools
 
 import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobal, JSImport}
 
 /**
  * Created by yoelusa on 27/04/15.
@@ -10,6 +11,7 @@ import scala.scalajs.js
 trait Key extends js.Object
 
 @js.native
+@JSGlobal
 object Key extends js.Object {
   def isDown(key: String): Boolean = js.native
 }

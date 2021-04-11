@@ -2,7 +2,7 @@ package paperjs
 package Basic
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 23/04/15.
@@ -32,7 +32,7 @@ object Vect {
 }
 
 @js.native
-@JSName("paper.Point")
+@JSGlobal("paper.Point")
 class Point(x: Double, y: Double) extends PointProps with Vect {
   def this(x: Double) = this(0,0)
   def this(props: PointProps) = this(0,0)
@@ -72,7 +72,7 @@ class Point(x: Double, y: Double) extends PointProps with Vect {
 }
 
 @js.native
-@JSName("paper.Point")
+@JSGlobal("paper.Point")
 object Point extends js.Object {
   def min(point1: Point, point2: Point): Point = js.native
   def max(point1: Point, point2: Point): Point = js.native

@@ -2,7 +2,7 @@ package paperjs
 package Items
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 import Basic._
 
 /**
@@ -10,5 +10,5 @@ import Basic._
  */
 
 @js.native
-@JSName("paper.PlacedSymbol")
+@JSGlobal("paper.PlacedSymbol")
 class PlacedSymbol(symbol: Symbol, var point: Point = Point(0,0)) extends Item

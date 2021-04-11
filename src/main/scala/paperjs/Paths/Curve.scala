@@ -2,7 +2,7 @@ package paperjs
 package Paths
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 import Basic._
 
@@ -11,7 +11,7 @@ import Basic._
  */
 
 @js.native
-@JSName("paper.Curve")
+@JSGlobal("paper.Curve")
 class Curve(var segment1: Segment, var segment2: Segment) extends js.Object {
   def this(point1: Point, handle1: Point, handle2: Point, point2: Point) =
     this(Segment(Point(0,0)),Segment(Point(0,0)))

@@ -4,14 +4,14 @@ package Styling
 import scala.scalajs.js
 import Basic._
 
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 25/04/15.
  */
 
 @js.native
-@JSName("paper.GradientStops")
+@JSGlobal("paper.GradientStops")
 class GradientStops(color: String, rampPoint: Double) extends js.Object {
   def this(color: Color, rampPoint: Double) = this("",0)
   override def clone(): GradientStops = js.native
@@ -26,7 +26,7 @@ trait Gradient extends js.Object {
 }
 
 @js.native
-@JSName("paper.Color")
+@JSGlobal("paper.Color")
 class Color(red: Double, green: Double, blue: Double, alpha: Double) extends js.Object {
   def this(gray: Double, alpha: Double) = this(0,0,0,0)
   def this(gradient: Gradient, origin: Point, destination: Point,

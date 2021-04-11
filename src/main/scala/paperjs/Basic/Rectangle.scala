@@ -2,7 +2,7 @@ package paperjs
 package Basic
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 24/04/15.
@@ -44,7 +44,7 @@ object RectDims {
 }
 
 @js.native
-@JSName("paper.Rectangle")
+@JSGlobal("paper.Rectangle")
 class Rect(x: Double, y: Double, width: Double, height: Double) extends RectProps {
   def this(p: Point, s: Size) = this(0,0,0,0)
   def this(props: RectProps) = this(0,0,0,0)

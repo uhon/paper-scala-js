@@ -4,7 +4,7 @@ import scala.scalajs.js
 import paperjs._
 import Basic._,Styling._
 
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 import org.scalajs.dom._
 
 /**
@@ -12,7 +12,7 @@ import org.scalajs.dom._
  */
 
 @js.native
-@JSName("paper.Raster")
+@JSGlobal("paper.Raster")
 class Raster(var source: String, position: Point = Point(0,0)) extends Item {
   def this(source: raw.HTMLImageElement, position: Point) = this("", position)
   def this(source: raw.HTMLCanvasElement, position: Point) = this("", position)

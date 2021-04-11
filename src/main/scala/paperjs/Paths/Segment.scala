@@ -4,14 +4,14 @@ package Paths
 import scala.scalajs.js
 import Basic._
 
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 
 /**
  * Created by yoelusa on 25/04/15.
  */
 
 @js.native
-@JSName("paper.Segment")
+@JSGlobal("paper.Segment")
 class Segment(var point: Point, var handleIn: Point = Point(0,0),
               var handleOut: Point = Point(0,0)) extends js.Object {
   def this(obj: js.Dynamic) = this(Point(0,0))

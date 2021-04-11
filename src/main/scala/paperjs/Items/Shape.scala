@@ -2,7 +2,7 @@ package paperjs
 package Items
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.{JSName, JSGlobal}
 import Basic._
 
 /**
@@ -10,7 +10,6 @@ import Basic._
  */
 
 @js.native
-@JSName("paper.Shape")
 trait Shape extends Item {
   @JSName("type")
   def typeName: String =js.native
@@ -19,7 +18,7 @@ trait Shape extends Item {
 }
 
 @js.native
-@JSName("paper.Shape")
+@JSGlobal("paper.Shape")
 object Shape extends js.Object {
   def Circle(center: Point, radius: Double): Shape = js.native
   def Circle(obj: js.Dynamic): Shape = js.native
